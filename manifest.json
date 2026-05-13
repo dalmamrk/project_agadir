@@ -1,0 +1,17 @@
+{
+  "name": "Agadir Hub",
+  "short_name": "Agadir",
+  "description": "Travel Dashboard for Agadir trip",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0B192C",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

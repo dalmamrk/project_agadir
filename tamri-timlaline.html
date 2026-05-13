@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tamri & Timlaline - Agadir Travel Hub</title>
+    
+    <!-- PWA Meta Tags for iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Day 2">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- Local iOS Icon -->
+    <link rel="apple-touch-icon" href="./icons/icon.svg">
+    
+    <!-- Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Hide scrollbar for a cleaner mobile app look */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            -webkit-tap-highlight-color: transparent;
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        header {
+            padding-top: env(safe-area-inset-top);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-200 font-sans antialiased pb-10 selection:bg-amber-500 selection:text-white">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md px-6 pt-6 pb-4 flex items-center justify-center">
+        <a href="index.html" class="absolute left-4 p-2 bg-slate-800/80 hover:bg-slate-700/80 active:scale-[0.97] rounded-full text-slate-300 transition-all duration-200 flex items-center justify-center h-10 w-10 border border-slate-700/50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+            </svg>
+        </a>
+        <h1 class="text-xl font-bold tracking-tight">
+            <span class="text-amber-400">Day 2</span>
+        </h1>
+    </header>
+    <div class="h-[2px] bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
+
+    <main class="p-4 space-y-6 max-w-md mx-auto mt-2">
+        
+        <!-- Hero Section -->
+        <section class="text-center space-y-3 py-2">
+            <h2 class="text-3xl font-bold text-white tracking-tight">🌴 Bananeti e <br>Dune Incantate</h2>
+            <p class="text-sm text-slate-400 leading-relaxed px-2">
+                Esplora la bellezza selvaggia della costa a nord di Agadir con un itinerario che unisce le tradizioni agricole di Tamri ai paesaggi desertici a picco sull'oceano delle Dune di Timlaline.
+            </p>
+        </section>
+
+        <!-- Tappa 1 -->
+        <section class="bg-slate-800/40 rounded-3xl p-5 border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-5xl">🍌</div>
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-3">
+                    Tappa 1
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Tamri – Tra Fiumi e Bananeti</h3>
+                <p class="text-sm text-slate-300 italic mb-5">
+                    "Un'immersione nel verde delle piantagioni locali e viste mozzafiato sull'estuario."
+                </p>
+
+                <!-- Info Logistiche -->
+                <div class="bg-slate-900/50 rounded-2xl p-4 mb-5 space-y-3 border border-slate-700/30">
+                    <h4 class="text-xs text-slate-500 uppercase tracking-widest font-bold">Info Logistiche</h4>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-start gap-2">
+                            <span class="text-emerald-400 mt-0.5">📍</span>
+                            <p><span class="text-white font-medium">Parcheggio:</span> Lungo la N1 a Tamri, vicino a "La Bananeraie" o piazzetta.</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-emerald-400 mt-0.5">🧭</span>
+                            <p><span class="text-white font-medium">Coordinate:</span> 
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=30.6975,-9.8256" target="_blank" class="inline-flex items-center gap-1 text-sky-400 hover:text-sky-300 font-medium active:scale-95 transition-transform">
+                                    Avvia Navigazione
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+                                      <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-emerald-400 mt-0.5">⏱️</span>
+                            <p><span class="text-white font-medium">Durata:</span> 1,5 - 2 ore</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Itinerario -->
+                <div>
+                    <h4 class="text-xs text-slate-500 uppercase tracking-widest font-bold mb-3">Itinerario a Piedi (Anello)</h4>
+                    <ul class="space-y-3 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-emerald-500 flex items-center justify-center text-[10px] font-bold text-white z-10 mt-0.5">1</div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">I Canali di Irrigazione:</strong> Scendi verso il letto del fiume Oued Tamri, seguendo i sentieri che costeggiano i sistemi di irrigazione tra i filari di banane.</p>
+                        </li>
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-emerald-500 flex items-center justify-center text-[10px] font-bold text-white z-10 mt-0.5">2</div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Verso l'Oceano:</strong> Cammina verso ovest seguendo il corso del fiume verso la foce.</p>
+                        </li>
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-emerald-500 flex items-center justify-center text-[10px] font-bold text-white z-10 mt-0.5">3</div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Il Punto Pano:</strong> Risali sulle scogliere a nord per una vista spettacolare sull'estuario e sull'Atlantico.</p>
+                        </li>
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-emerald-500 flex items-center justify-center text-[10px] font-bold text-white z-10 mt-0.5">4</div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Rientro:</strong> Torna in paese attraverso la zona dei mercanti. Ideale per un tè o per acquistare banane locali.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tappa 2 -->
+        <section class="bg-slate-800/40 rounded-3xl p-5 border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-5xl">🏜️</div>
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
+                    Tappa 2
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Timlaline – Canyon, Dune e Ibis Eremita</h3>
+                <p class="text-sm text-slate-300 italic mb-5">
+                    "Un percorso magico tra gole di arenaria e dune dorate che finiscono direttamente in mare."
+                </p>
+
+                <!-- Info Logistiche -->
+                <div class="bg-slate-900/50 rounded-2xl p-4 mb-5 space-y-3 border border-slate-700/30">
+                    <h4 class="text-xs text-slate-500 uppercase tracking-widest font-bold">Info Logistiche</h4>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-start gap-2">
+                            <span class="text-amber-400 mt-0.5">📍</span>
+                            <p><span class="text-white font-medium">Parcheggio:</span> Area sosta noleggiatori quad/sandboard sulla N1 (4 km nord di Tamri).</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-amber-400 mt-0.5">🧭</span>
+                            <p><span class="text-white font-medium">Coordinate:</span> 
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=30.7185,-9.8390" target="_blank" class="inline-flex items-center gap-1 text-sky-400 hover:text-sky-300 font-medium active:scale-95 transition-transform">
+                                    Avvia Navigazione
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+                                      <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-amber-400 mt-0.5">⏱️</span>
+                            <p><span class="text-white font-medium">Durata:</span> Circa 1,5 ore</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Itinerario -->
+                <div>
+                    <h4 class="text-xs text-slate-500 uppercase tracking-widest font-bold mb-3">Itinerario "Wildlife & Views"</h4>
+                    <ul class="space-y-3 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-amber-500 flex items-center justify-center z-10 mt-0.5">
+                                <div class="w-2 h-2 bg-amber-500 rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Il Piccolo Canyon:</strong> Dal parcheggio cammina verso nord (parallelo alla strada) per 200m fino alla gola di arenaria.</p>
+                        </li>
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-amber-500 flex items-center justify-center z-10 mt-0.5">
+                                <div class="w-2 h-2 bg-amber-500 rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Wildlife Spotting:</strong> Percorri il canyon in silenzio. Nelle pareti rocciose nidifica il raro <em>Ibis Eremita</em>.</p>
+                        </li>
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-amber-500 flex items-center justify-center z-10 mt-0.5">
+                                <div class="w-2 h-2 bg-amber-500 rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Salita alle Dune:</strong> Esci dal canyon e risali le maestose dune di sabbia verso il mare.</p>
+                        </li>
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-amber-500 flex items-center justify-center z-10 mt-0.5">
+                                <div class="w-2 h-2 bg-amber-500 rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">La Cresta Panoramica:</strong> Raggiungi il crinale a picco. Goditi il contrasto sabbia/oceano (<span class="text-rose-400 font-medium">Attenzione allo strapiombo di 70+ metri!</span>).</p>
+                        </li>
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-amber-500 flex items-center justify-center z-10 mt-0.5">
+                                <div class="w-2 h-2 bg-amber-500 rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Rientro:</strong> Segui il crinale verso sud e ridiscendi verso l'area parcheggio.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consigli Sosta -->
+        <section class="bg-gradient-to-br from-indigo-900/40 to-slate-800/40 rounded-3xl p-5 border border-indigo-500/20 shadow-lg">
+            <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                <span>🍴</span> Consigli per la Sosta
+            </h3>
+            <p class="text-sm text-slate-300 mb-4">Se vuoi fermarti per un pranzo autentico a Tamri, considera:</p>
+            
+            <div class="space-y-3">
+                <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                    <div class="text-2xl mt-1">🥘</div>
+                    <div>
+                        <h4 class="text-white font-medium text-sm">Restaurant La Bananeraie</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Celebre per il suo Tajine d'Agnello servito tra le piante.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                    <div class="text-2xl mt-1">⛺</div>
+                    <div>
+                        <h4 class="text-white font-medium text-sm">Berber Food</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Un'atmosfera rustica per piatti genuini preparati al momento.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                    <div class="text-2xl mt-1">🥤</div>
+                    <div>
+                        <h4 class="text-white font-medium text-sm">Floraino</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Perfetto per smoothie freschi a base di banana.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 text-[10px] text-slate-600">
+        Agadir Travel Hub · 2026
+    </footer>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
