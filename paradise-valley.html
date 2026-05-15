@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Paradise Valley - Agadir Travel Hub</title>
+    
+    <!-- PWA Meta Tags for iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Day 3">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- Local iOS Icon -->
+    <link rel="apple-touch-icon" href="./icons/icon.svg">
+    
+    <!-- Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Hide scrollbar for a cleaner mobile app look */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            -webkit-tap-highlight-color: transparent;
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        header {
+            padding-top: env(safe-area-inset-top);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-200 font-sans antialiased pb-10 selection:bg-amber-500 selection:text-white">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md px-6 pt-6 pb-4 flex items-center justify-center">
+        <a href="index.html" class="absolute left-4 p-2 bg-slate-800/80 hover:bg-slate-700/80 active:scale-[0.97] rounded-full text-slate-300 transition-all duration-200 flex items-center justify-center h-10 w-10 border border-slate-700/50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+            </svg>
+        </a>
+        <h1 class="text-xl font-bold tracking-tight">
+            <span class="text-amber-400">Day 3</span>
+        </h1>
+    </header>
+    <div class="h-[2px] bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
+
+    <main class="p-4 space-y-6 max-w-md mx-auto mt-2">
+        
+        <!-- Hero Section -->
+        <section class="text-center space-y-3 py-2">
+            <h2 class="text-3xl font-bold text-white tracking-tight">🌴 Paradise <br>Valley</h2>
+            <p class="text-sm text-slate-400 leading-relaxed px-2">
+                Un’oasi di palme, piscine naturali e profonde gole rocciose incastonate tra le montagne dell’Alto Atlante.
+            </p>
+        </section>
+
+        <!-- L'Itinerario Stradale -->
+        <section class="bg-slate-800/40 rounded-3xl p-5 border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-5xl">🚗</div>
+            <div class="relative z-10">
+                <h3 class="text-xl font-bold text-white mb-4">L'Itinerario Stradale</h3>
+                
+                <div class="space-y-4">
+                    <!-- Andata -->
+                    <div class="bg-slate-900/50 rounded-2xl p-4 border border-slate-700/30">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-3">
+                            Andata
+                        </div>
+                        <h4 class="text-sm font-bold text-white mb-1">Costa e Argan (N1 + P1001)</h4>
+                        <p class="text-sm text-slate-300 mb-3"><strong class="text-white">Percorso:</strong> Da Aghroud segui la N1 verso sud fino ad Aourir, poi imbocca la P1001 verso l'interno.</p>
+                        <p class="text-sm text-slate-300 mb-4"><strong class="text-white">Panorama:</strong> Guida rilassata lungo le scogliere di Taghazout prima di salire tra le colline della Biosfera UNESCO, dove i pendii sono punteggiati da alberi di Argan.</p>
+                        <a href="https://www.google.com/maps/dir/?api=1&origin=Aghroud&destination=Paradise+Valley&waypoints=Aourir" target="_blank" class="inline-flex items-center gap-1 text-sky-400 hover:text-sky-300 font-medium active:scale-95 transition-transform text-sm">
+                            Avvia Navigazione Andata
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+                                <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Ritorno -->
+                    <div class="bg-slate-900/50 rounded-2xl p-4 border border-slate-700/30">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
+                            Ritorno
+                        </div>
+                        <h4 class="text-sm font-bold text-white mb-1">L'Altopiano Brullo (Via Aksri)</h4>
+                        <p class="text-sm text-slate-300 mb-3"><strong class="text-white">Percorso:</strong> Oltre il canyon, prosegui verso nord-ovest in direzione Aksri. La strada è interamente asfaltata e si ricongiunge alla N1 a nord di Aghroud.</p>
+                        <p class="text-sm text-slate-300 mb-4"><strong class="text-white">Geologia:</strong> Un tratto selvaggio che attraversa zone aride con spettacolari stratificazioni rocciose di arenaria e calcare visibili a occhio nudo.</p>
+                        <a href="https://www.google.com/maps/dir/?api=1&origin=Paradise+Valley&destination=Aghroud&waypoints=Aksri" target="_blank" class="inline-flex items-center gap-1 text-sky-400 hover:text-sky-300 font-medium active:scale-95 transition-transform text-sm">
+                            Avvia Navigazione Ritorno
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+                                <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cosa Vedere -->
+        <section class="bg-slate-800/40 rounded-3xl p-5 border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-5xl">🌴</div>
+            <div class="relative z-10">
+                <h3 class="text-xl font-bold text-white mb-5">Paradise Valley: Cosa Vedere</h3>
+                
+                <!-- Piscine Naturali e Relax -->
+                <div class="mb-6">
+                    <h4 class="text-sm font-bold text-white mb-3 flex items-center gap-2"><span class="text-sky-400">💧</span> Piscine Naturali e Relax</h4>
+                    <ul class="space-y-3 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-sky-500 flex items-center justify-center z-10 mt-0.5">
+                                <div class="w-2 h-2 bg-sky-500 rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Trekking:</strong> Un sentiero di circa 20-30 minuti conduce dal parcheggio al cuore della valle.</p>
+                        </li>
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-sky-500 flex items-center justify-center z-10 mt-0.5">
+                                <div class="w-2 h-2 bg-sky-500 rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">L'Oasi:</strong> Conche d'acqua cristallina scavate nella roccia e i caratteristici café con i tavolini posizionati direttamente nel letto del fiume.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Scorci Geologici -->
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-3 flex items-center gap-2"><span class="text-amber-500">🪨</span> Scorci Geologici</h4>
+                    <ul class="space-y-3 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-amber-500 flex items-center justify-center z-10 mt-0.5">
+                                <div class="w-2 h-2 bg-amber-500 rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Le Gole:</strong> Pareti verticali di arenaria alte fino a 180 metri, modellate dall'erosione millenaria del fiume Tamraght.</p>
+                        </li>
+                        <li class="relative flex items-start gap-3">
+                            <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-amber-500 flex items-center justify-center z-10 mt-0.5">
+                                <div class="w-2 h-2 bg-amber-500 rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Colori:</strong> Il contrasto cromatico netto tra il verde lussureggiante dei palmeti e le tonalità ocra e rosse delle rocce del canyon.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Info Utili -->
+        <section class="bg-gradient-to-br from-indigo-900/40 to-slate-800/40 rounded-3xl p-5 border border-indigo-500/20 shadow-lg">
+            <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                <span>💡</span> Info Utili
+            </h3>
+            
+            <div class="space-y-3">
+                <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                    <div class="text-2xl mt-1">🛡️</div>
+                    <div>
+                        <h4 class="text-white font-medium text-sm">Sicurezza</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Il percorso ad anello scelto utilizza solo strade asfaltate adatte a una macchina standard.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                    <div class="text-2xl mt-1">🎒</div>
+                    <div>
+                        <h4 class="text-white font-medium text-sm">Cosa portare</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Costume da bagno, asciugamano e protezione solare.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                    <div class="text-2xl mt-1">🍯</div>
+                    <div>
+                        <h4 class="text-white font-medium text-sm">Miele locale</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Lungo la strada troverai i produttori del pregiato miele di timo o di cactus tipico di Imouzzer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 text-[10px] text-slate-600">
+        Agadir Travel Hub · 2026
+    </footer>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
