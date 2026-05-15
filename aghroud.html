@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="it" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Aghroud - Agadir Travel Hub</title>
+    
+    <!-- PWA Meta Tags for iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Aghroud">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- Local iOS Icon -->
+    <link rel="apple-touch-icon" href="./icons/icon.svg">
+    
+    <!-- Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Hide scrollbar for a cleaner mobile app look */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            -webkit-tap-highlight-color: transparent;
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        header {
+            padding-top: env(safe-area-inset-top);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-200 font-sans antialiased pb-20 selection:bg-amber-500 selection:text-white">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md px-6 pt-6 pb-4 flex items-center justify-center">
+        <a href="index.html" class="absolute left-4 p-2 bg-slate-800/80 hover:bg-slate-700/80 active:scale-[0.97] rounded-full text-slate-300 transition-all duration-200 flex items-center justify-center h-10 w-10 border border-slate-700/50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+            </svg>
+        </a>
+        <h1 class="text-xl font-bold tracking-tight">
+            <span class="text-orange-400">Aghroud</span>
+        </h1>
+    </header>
+    <div class="h-[2px] bg-gradient-to-r from-transparent via-orange-400 to-transparent"></div>
+
+    <main class="p-4 space-y-6 max-w-md mx-auto mt-2">
+        
+        <!-- Hero Section -->
+        <section class="text-center space-y-3 py-2">
+            <h2 class="text-3xl font-bold text-white tracking-tight">Aghroud<br><span class="text-xl text-slate-300">Il Villaggio dei Colori</span></h2>
+            <p class="text-sm text-slate-400 leading-relaxed px-2 mt-2">
+                Situato circa 30 km a nord di Agadir, Aghroud è un antico villaggio di pescatori trasformato in una galleria d'arte a cielo aperto. È la nostra base strategica, lontana dal caos e immersa in un'atmosfera magica e rilassata.
+            </p>
+            <div class="pt-2">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Aghroud" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-xl active:scale-[0.98] transition-all shadow-lg shadow-orange-500/20">
+                    <span>🧭</span> Naviga verso Aghroud
+                </a>
+            </div>
+        </section>
+
+        <!-- Un po' di Storia -->
+        <section class="bg-slate-800/40 rounded-3xl p-5 border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-5xl">📖</div>
+            <div class="relative z-10">
+                <h3 class="text-xl font-bold text-white mb-4">Un po' di Storia</h3>
+                <p class="text-sm text-slate-300 mb-3">
+                    Il villaggio, il cui nome in lingua Amazigh significa "spalla" (riferito alla forma della costa), ha cambiato volto circa dieci anni fa. Tutto è iniziato grazie a <strong class="text-white">Abdelkebir Moutli</strong>, un attivista locale che decise di dipingere la propria casa con colori vivaci per rompere la monotonia dei muri grezzi.
+                </p>
+                <p class="text-sm text-slate-300">
+                    L'iniziativa è stata contagiosa: i vicini hanno seguito l'esempio e oggi Aghroud è un mosaico di facciate blu, gialle, arancioni e rosa, arricchite da murales e disegni geometrici che lo rendono uno dei borghi più fotogenici del Marocco, spesso paragonato a una versione atlantica di Chefchaouen.
+                </p>
+            </div>
+        </section>
+
+        <!-- Vita Locale e Servizi -->
+        <section class="bg-slate-800/40 rounded-3xl p-5 border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-5xl">☕</div>
+            <div class="relative z-10">
+                <h3 class="text-xl font-bold text-white mb-4">Vita Locale e Servizi</h3>
+                <p class="text-sm text-slate-300 mb-5">
+                    Aghroud è un borgo tranquillo che conserva la sua anima autentica. Non aspettarti grandi centri commerciali, ma piuttosto piccoli punti di ritrovo locali:
+                </p>
+                
+                <ul class="space-y-4 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+                    <li class="relative flex items-start gap-3">
+                        <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-orange-400 flex items-center justify-center z-10 mt-0.5">
+                            <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Bar e Cafè</h4>
+                            <p class="text-sm text-slate-300 mt-1">Lungo la strada principale (N1) e vicino alla spiaggia si trovano piccoli café berberi dove è d'obbligo fermarsi per un tè alla menta. Molti offrono anche colazioni tradizionali con pane fresco e olio d'Argan.</p>
+                        </div>
+                    </li>
+                    <li class="relative flex items-start gap-3">
+                        <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-sky-400 flex items-center justify-center z-10 mt-0.5">
+                            <div class="w-2 h-2 bg-sky-400 rounded-full"></div>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Piccoli Negozi</h4>
+                            <p class="text-sm text-slate-300 mt-1">Troverai alcune <em>hanout</em> (piccole botteghe di quartiere) perfette per beni di prima necessità: acqua, snack, uova o pane fresco ogni mattina.</p>
+                        </div>
+                    </li>
+                    <li class="relative flex items-start gap-3">
+                        <div class="flex-none w-6 h-6 rounded-full bg-slate-800 border-2 border-emerald-400 flex items-center justify-center z-10 mt-0.5">
+                            <div class="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Ristorantini di Pesce</h4>
+                            <p class="text-sm text-slate-300 mt-1">Essendo un villaggio di pescatori, è facile trovare piccoli locali che servono il pescato del giorno grigliato in modo semplice e genuino.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Logistica: Dove fare la spesa -->
+        <section class="bg-slate-800/40 rounded-3xl p-5 border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-5xl">🛒</div>
+            <div class="relative z-10">
+                <h3 class="text-xl font-bold text-white mb-4">Logistica: Dove fare la spesa</h3>
+                <p class="text-sm text-slate-300 mb-5">
+                    Essendo Aghroud un villaggio residenziale e tranquillo, per una spesa completa bisogna spostarsi di qualche chilometro:
+                </p>
+
+                <div class="space-y-3">
+                    <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                        <div class="text-lg font-bold text-slate-500 mt-0.5 w-5 text-center">1</div>
+                        <div>
+                            <h4 class="text-white font-medium text-sm">Imi Ouaddar <span class="text-xs text-slate-400 font-normal">(5 min)</span></h4>
+                            <p class="text-xs text-slate-400 mt-1">È il centro più vicino. Qui troverai diversi mercati locali, macellerie e piccoli alimentari più forniti.</p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Imi+Ouaddar" target="_blank" class="inline-flex items-center gap-1 text-sky-400 hover:text-sky-300 font-medium active:scale-95 transition-transform text-xs mt-2 uppercase tracking-wide">Naviga <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></a>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                        <div class="text-lg font-bold text-slate-500 mt-0.5 w-5 text-center">2</div>
+                        <div>
+                            <h4 class="text-white font-medium text-sm">Taghazout <span class="text-xs text-slate-400 font-normal">(10 min)</span></h4>
+                            <p class="text-xs text-slate-400 mt-1">Ottimo per trovare prodotti più "internazionali" o farmacie.</p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Taghazout" target="_blank" class="inline-flex items-center gap-1 text-sky-400 hover:text-sky-300 font-medium active:scale-95 transition-transform text-xs mt-2 uppercase tracking-wide">Naviga <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></a>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                        <div class="text-lg font-bold text-slate-500 mt-0.5 w-5 text-center">3</div>
+                        <div>
+                            <h4 class="text-white font-medium text-sm">Carrefour Agadir <span class="text-xs text-slate-400 font-normal">(35 min)</span></h4>
+                            <p class="text-xs text-slate-400 mt-1">Se cerchi un supermercato in stile europeo con ampia scelta (inclusi reparti internazionali), il punto vendita più vicino si trova all'ingresso di Agadir (zona Marina o quartiere Talborjt).</p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Carrefour+Market+Agadir" target="_blank" class="inline-flex items-center gap-1 text-sky-400 hover:text-sky-300 font-medium active:scale-95 transition-transform text-xs mt-2 uppercase tracking-wide">Naviga <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consigli per il Soggiorno -->
+        <section class="bg-gradient-to-br from-indigo-900/40 to-slate-800/40 rounded-3xl p-5 border border-indigo-500/20 shadow-lg">
+            <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                <span>💡</span> Consigli per il Soggiorno
+            </h3>
+            
+            <div class="space-y-3">
+                <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                    <div class="text-2xl mt-1">📸</div>
+                    <div>
+                        <h4 class="text-white font-medium text-sm">Esplorazione</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Perdetevi tra i vicoli colorati nel tardo pomeriggio; la luce calda rende i colori ancora più vibranti per le foto.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                    <div class="text-2xl mt-1">🏖️</div>
+                    <div>
+                        <h4 class="text-white font-medium text-sm">Spiaggia</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">La spiaggia di Aghroud è meno affollata di quella di Taghazout, ideale per una passeggiata mattutina prima di iniziare i tour.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/50 p-3 rounded-2xl border border-slate-700/50 flex items-start gap-3">
+                    <div class="text-2xl mt-1">🚗</div>
+                    <div>
+                        <h4 class="text-white font-medium text-sm">Navigazione</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Ricordate che da Aghroud l'accesso alla N1 è immediato, rendendolo perfetto per le vostre escursioni verso Paradise Valley e Tamri.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 text-[10px] text-slate-600">
+        Agadir Travel Hub · 2026
+    </footer>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-700/50" style="padding-bottom: env(safe-area-inset-bottom);">
+        <div class="grid grid-cols-5 max-w-md mx-auto">
+            <a href="index.html" class="flex flex-col items-center gap-0.5 py-2.5 text-slate-500 active:scale-95 transition-all">
+                <span class="text-lg">🏠</span>
+                <span class="text-[9px] font-medium">Home</span>
+            </a>
+            <a href="taghazout.html" class="flex flex-col items-center gap-0.5 py-2.5 text-slate-500 active:scale-95 transition-all">
+                <span class="text-lg">🏄</span>
+                <span class="text-[9px] font-medium">Taghazout</span>
+            </a>
+            <a href="aghroud.html" class="flex flex-col items-center gap-0.5 py-2.5 text-orange-400 active:scale-95 transition-all">
+                <span class="text-lg">🏘️</span>
+                <span class="text-[9px] font-medium">Aghroud</span>
+            </a>
+            <a href="tamri-timlaline.html" class="flex flex-col items-center gap-0.5 py-2.5 text-slate-500 active:scale-95 transition-all">
+                <span class="text-lg">🏂</span>
+                <span class="text-[9px] font-medium">Tamri</span>
+            </a>
+            <a href="paradise-valley.html" class="flex flex-col items-center gap-0.5 py-2.5 text-slate-500 active:scale-95 transition-all">
+                <span class="text-lg">🌴</span>
+                <span class="text-[9px] font-medium">Valley</span>
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
