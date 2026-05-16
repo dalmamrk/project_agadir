@@ -1,4 +1,4 @@
-const CACHE_NAME = 'agadir-hub-v3';
+const CACHE_NAME = 'agadir-hub-v5';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -6,6 +6,8 @@ const ASSETS_TO_CACHE = [
   './aghroud.html',
   './tamri-timlaline.html',
   './paradise-valley.html',
+  './day1.html',
+  './logo_dirent.png',
   './manifest.json',
   './icons/icon.svg'
 ];

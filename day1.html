@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="it" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Day 1: L'Arrivo - Agadir Travel Hub</title>
+    
+    <!-- PWA Meta Tags for iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Day 1">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- Local iOS Icon -->
+    <link rel="apple-touch-icon" href="./icons/icon.svg">
+    
+    <!-- Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Hide scrollbar for a cleaner mobile app look */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            -webkit-tap-highlight-color: transparent;
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        header {
+            padding-top: env(safe-area-inset-top);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-200 font-sans antialiased pb-20 selection:bg-amber-500 selection:text-white">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md px-6 pt-6 pb-4 flex items-center justify-center">
+        <a href="index.html" class="absolute left-4 p-2 bg-slate-800/80 hover:bg-slate-700/80 active:scale-[0.97] rounded-full text-slate-300 transition-all duration-200 flex items-center justify-center h-10 w-10 border border-slate-700/50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+            </svg>
+        </a>
+        <h1 class="text-xl font-bold tracking-tight">
+            <span class="text-amber-400">Day 1</span>
+        </h1>
+    </header>
+    <div class="h-[2px] bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
+
+    <main class="p-4 space-y-6 max-w-md mx-auto mt-2">
+        
+        <!-- Hero Section -->
+        <section class="text-center space-y-3 py-2">
+            <h2 class="text-3xl font-bold text-white tracking-tight">✈️ L'Arrivo e <br>l'Esplorazione</h2>
+            <p class="text-sm text-slate-400 leading-relaxed px-2">
+                Il primo giorno unisce la logistica dello sbarco all'immersione immediata nei profumi e nei panorami di Agadir, prima di prendere possesso della base di Aghroud.
+            </p>
+        </section>
+
+        <!-- Quick Info Bar -->
+        <section class="flex items-center justify-center gap-2 flex-wrap">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-800/60 rounded-full border border-slate-700/50 text-xs">
+                <span>🛣️</span>
+                <span class="text-slate-300"><strong class="text-white">Strada:</strong> Autostrada/Nazionale 100% asfalto</span>
+            </div>
+            <div class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-800/60 rounded-full border border-slate-700/50 text-xs">
+                <span>🎯</span>
+                <span class="text-slate-300"><strong class="text-white">Focus:</strong> Logistica & Panorami</span>
+            </div>
+            <div class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-800/60 rounded-full border border-slate-700/50 text-xs">
+                <span>🚗</span>
+                <span class="text-slate-300"><strong class="text-white">Guida:</strong> Urbana / Costiera</span>
+            </div>
+        </section>
+
+        <!-- Logistica di Partenza -->
+        <section class="bg-slate-800/40 rounded-3xl p-5 border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-5xl">🛬</div>
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
+                    Partenza
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Atterraggio & Ritiro Auto</h3>
+                
+                <div class="space-y-3 mt-4 text-sm text-slate-300">
+                    <p><strong class="text-white">Arrivo:</strong> Volo atterrato alle ore 08:40.</p>
+                    <p><strong class="text-white">Ritiro Veicolo:</strong> Ore 10:00 presso diRENT Agadir (un rappresentante attende all'uscita del terminal per accompagnarvi alla navetta aziendale che vi porterà al parcheggio auto).</p>
+                    <div class="mt-2 bg-slate-100 rounded-xl p-2 inline-flex flex-col items-center gap-1 border border-slate-300">
+                        <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wide">Cerca questo logo sulla navetta</span>
+                        <img src="./logo_dirent.png" alt="Logo diRENT" class="h-10 object-contain">
+                    </div>
+                    <p><strong class="text-white">Coordinate Agenzia:</strong> 30.33408, -9.40387.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tappa 1 -->
+        <section class="bg-slate-800/40 rounded-3xl p-5 border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-5xl">🛒</div>
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
+                    Tappa 1
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Souk El Had</h3>
+                <p class="text-sm text-slate-300 mb-4">
+                    <strong class="text-white">Percorso:</strong> Dall'aeroporto ci si sposta verso il cuore pulsante del commercio cittadino.
+                </p>
+                <p class="text-sm text-slate-300 mb-4">
+                    <strong class="text-white">Cosa fare:</strong> Immersione nei colori del mercato per i primi acquisti o un rapido snack.
+                </p>
+
+                <div class="pt-2 pb-1">
+                    <a href="https://www.google.com/maps/dir/?api=1&origin=30.33408,-9.40387&destination=30.41105,-9.57901" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-xl active:scale-[0.94] active:brightness-125 transition-all duration-100 ease-out shadow-lg shadow-orange-500/20">
+                        <span>🧭</span> Naviga al Parking Souk
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Opzioni Pomeridiane -->
+        <section class="bg-slate-800/40 rounded-3xl p-5 border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-5xl">📍</div>
+            <div class="relative z-10">
+                <h3 class="text-xl font-bold text-white mb-2">Opzioni Pomeridiane</h3>
+                <p class="text-sm text-slate-300 mb-5">
+                    A seconda del tempo a disposizione prima di poter entrare nell'alloggio ad Aghroud alle 15:00 (30.60513, -9.77926), l'itinerario si divide in due opzioni flessibili ed entusiasmanti:
+                </p>
+
+                <!-- Opzione A -->
+                <div class="bg-slate-900/50 rounded-2xl p-4 mb-5 border border-slate-700/30">
+                    <h4 class="text-white font-bold text-base mb-2 flex items-center gap-2"><span>🚠</span> Opzione A: Agadir dall'Alto</h4>
+                    <p class="text-sm text-slate-300 mb-3">Se i tempi al Souk sono rapidi, si punta verso la stazione della Cable Car.</p>
+                    <p class="text-sm text-slate-300 mb-3"><strong class="text-white">L'Esperienza:</strong> Una cabina panoramica che in circa 6 minuti sorvola la marina e il porto.</p>
+                    <p class="text-sm text-slate-300 mb-4"><strong class="text-white">All'arrivo:</strong> La storica Kasbah di Agadir Oufella (fortezza del XVI secolo), che offre la vista panoramica a 360° più spettacolare dell'intera baia e dell'oceano Atlantico.</p>
+                    <div class="pt-2">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Gare+de+départ+Pont+Tildi,+Agadir" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-xl active:scale-[0.94] active:brightness-125 transition-all duration-100 ease-out shadow-lg shadow-orange-500/20">
+                            <span>🧭</span> Naviga alla Funivia
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Opzione B -->
+                <div class="bg-slate-900/50 rounded-2xl p-4 border border-slate-700/30">
+                    <h4 class="text-white font-bold text-base mb-2 flex items-center gap-2"><span>🏄</span> Opzione B: Sosta Relax a Tamraght</h4>
+                    <p class="text-sm text-slate-300 mb-3">Se preferisci avvicinarti alla base costiera in totale relax, superata Taghazout ci si ferma nel tranquillo villaggio surfistico di Tamraght per una passeggiata in spiaggia o tra i vicoli.</p>
+                    
+                    <h5 class="text-white font-medium text-sm mt-4 mb-2">Dove Mangiare:</h5>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><strong class="text-white">Timam Du Chef:</strong> Ottimo fast-food, celebre per i creativi French Tacos.</li>
+                        <li><strong class="text-white">Fana Food / Fastimim:</strong> Per un pranzo rapido (prova il kefta taco).</li>
+                        <li><strong class="text-white">Le Petit Kawa:</strong> Per tagine o couscous in atmosfera accogliente.</li>
+                        <li><strong class="text-white">Hey Yallah / Let's Be:</strong> Caffè, frullati e brunch moderno salutare.</li>
+                    </ul>
+                    <div class="pt-4">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Tamraght" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-xl active:scale-[0.94] active:brightness-125 transition-all duration-100 ease-out shadow-lg shadow-orange-500/20">
+                            <span>🧭</span> Naviga a Tamraght
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spesa al Carrefour -->
+        <section class="bg-slate-800/40 rounded-3xl p-5 border border-slate-700/50 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 text-5xl">🛒</div>
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
+                    Tappa Logistica
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Spesa al Carrefour</h3>
+                <p class="text-sm text-slate-300 mb-4">
+                    <strong class="text-white">Fermata:</strong> Prima di raggiungere l'alloggio ad Aghroud, è essenziale fermarsi al Carrefour Market di Anza per fare scorte e rifornimento di viveri per i giorni successivi.
+                </p>
+
+                <div class="pt-2 pb-1">
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=C9R2%2BMW+Anza,+Marocco" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-xl active:scale-[0.94] active:brightness-125 transition-all duration-100 ease-out shadow-lg shadow-orange-500/20">
+                        <span>🧭</span> Naviga al Carrefour
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinazione Finale -->
+        <section class="bg-gradient-to-br from-indigo-900/40 to-slate-800/40 rounded-3xl p-5 border border-indigo-500/20 shadow-lg">
+            <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                <span>🏡</span> Arrivo alla Base
+            </h3>
+            <p class="text-sm text-slate-300 mb-4">Check-in previsto ad Aghroud alle ore 15:00.</p>
+            
+            <div class="pt-2">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=30.60513,-9.77926" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-xl active:scale-[0.94] active:brightness-125 transition-all duration-100 ease-out shadow-lg shadow-orange-500/20">
+                    <span>🧭</span> Naviga verso Aghroud
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 text-[10px] text-slate-600">
+        Agadir Travel Hub · 2026
+    </footer>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-700/50" style="padding-bottom: env(safe-area-inset-bottom);">
+        <div class="grid grid-cols-5 max-w-md mx-auto">
+            <a href="index.html" class="flex flex-col items-center gap-0.5 py-2.5 text-amber-400 active:scale-95 transition-all">
+                <span class="text-lg">🏠</span>
+                <span class="text-[9px] font-medium">Home</span>
+            </a>
+            <a href="taghazout.html" class="flex flex-col items-center gap-0.5 py-2.5 text-slate-500 active:scale-95 transition-all">
+                <span class="text-lg">🏄</span>
+                <span class="text-[9px] font-medium">Taghazout</span>
+            </a>
+            <a href="aghroud.html" class="flex flex-col items-center gap-0.5 py-2.5 text-slate-500 active:scale-95 transition-all">
+                <span class="text-lg">🏘️</span>
+                <span class="text-[9px] font-medium">Aghroud</span>
+            </a>
+            <a href="tamri-timlaline.html" class="flex flex-col items-center gap-0.5 py-2.5 text-slate-500 active:scale-95 transition-all">
+                <span class="text-lg">🏂</span>
+                <span class="text-[9px] font-medium">Tamri</span>
+            </a>
+            <a href="paradise-valley.html" class="flex flex-col items-center gap-0.5 py-2.5 text-slate-500 active:scale-95 transition-all">
+                <span class="text-lg">🌴</span>
+                <span class="text-[9px] font-medium">Valley</span>
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
